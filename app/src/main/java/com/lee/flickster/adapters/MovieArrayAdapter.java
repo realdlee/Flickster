@@ -2,7 +2,6 @@ package com.lee.flickster.adapters;
 
 import android.content.Context;
 import android.content.res.Configuration;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +14,8 @@ import com.lee.flickster.models.Movie;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
+
+import jp.wasabeef.picasso.transformations.RoundedCornersTransformation;
 
 
 /**
@@ -67,7 +68,7 @@ public class MovieArrayAdapter extends ArrayAdapter<Movie> {
             imagePath = movie.getBackdropPath();
         }
 
-        Picasso.with(getContext()).load(imagePath).into(viewHolder.image);
+        Picasso.with(getContext()).load(imagePath).transform(new RoundedCornersTransformation(10, 10)).into(viewHolder.image);
 
         return convertView;
     }

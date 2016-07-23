@@ -18,6 +18,7 @@ Time spent: **2** hours spent in total
 - [ ] Optional: Display play icon overlay to indicate that the video can be
   played
 - [ ] Optional: Reduce view boilerplate with Butterknife library
+- [x] Optional: Add rounded corners to images using Picasso transformations
 
 ##Walkthrough of all user stories:
 
