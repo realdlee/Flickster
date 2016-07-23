@@ -15,6 +15,8 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import jp.wasabeef.picasso.transformations.RoundedCornersTransformation;
 
 
@@ -23,10 +25,13 @@ import jp.wasabeef.picasso.transformations.RoundedCornersTransformation;
  */
 public class MovieArrayAdapter extends ArrayAdapter<Movie> {
     //view lookup cache
-    private static class ViewHolder {
-        TextView title;
-        TextView overview;
-        ImageView image;
+    static class ViewHolder {
+        @BindView(R.id.tvTitle) TextView title;
+        @BindView(R.id.tvOverview) TextView overview;
+        @BindView(R.id.ivMovieImage) ImageView image;
+        public ViewHolder(View view) {
+            ButterKnife.bind(this, view);
+        }
     }
 
     public MovieArrayAdapter(Context context, List<Movie> movies) {
@@ -40,13 +45,9 @@ public class MovieArrayAdapter extends ArrayAdapter<Movie> {
         ViewHolder viewHolder; //caches view lookups; avoid repeated findViewById calls
         if (convertView == null) { //check if view is recycled
             // create new view
-            viewHolder = new ViewHolder();
             LayoutInflater inflater = LayoutInflater.from(getContext());
             convertView = inflater.inflate(R.layout.item_movie, parent, false);
-            //findViewById is slow
-            viewHolder.title = (TextView) convertView.findViewById(R.id.tvTitle);
-            viewHolder.overview = (TextView) convertView.findViewById(R.id.tvOverview);
-            viewHolder.image = (ImageView) convertView.findViewById(R.id.ivMovieImage);
+            viewHolder = new ViewHolder(convertView);
             convertView.setTag(viewHolder); //attaches arbitrary object onto a View object
         } else {
             // use recycled view
