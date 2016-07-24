@@ -9,9 +9,9 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:minWidth="300dp"
-        android:maxWidth="300dp"
-        android:minHeight="169dp"/>
+        android:minWidth="@dimen/backdrop_width"
+        android:maxWidth="@dimen/backdrop_width"
+        android:minHeight="@dimen/backdrop_height"/>
 
     <TextView
         android:layout_width="wrap_content"
