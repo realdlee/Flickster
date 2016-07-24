@@ -69,7 +69,7 @@ public class MovieArrayAdapter extends ArrayAdapter<Movie> {
             imagePath = movie.getBackdropPath();
         }
 
-        Picasso.with(getContext()).load(imagePath).transform(new RoundedCornersTransformation(10, 10)).into(viewHolder.image);
+        Picasso.with(getContext()).load(imagePath).placeholder(R.drawable.ticket).transform(new RoundedCornersTransformation(10, 10)).fit().into(viewHolder.image);
 
         return convertView;
     }

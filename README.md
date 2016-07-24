@@ -12,7 +12,7 @@ Time spent: **2** hours spent in total
 
 ##Future User stories:
 - [ ] Optional: Pull-to-refresh with SwipeRefreshLayout 
-- [ ] Optional: Display placeholder graphic for images during loading
+- [x] Optional: Display placeholder graphic for images during loading
 - [ ] Optional: Improve UI
 - [ ] Optional: Play videos in full-screen using YouTubePlayerView
 - [ ] Optional: Display play icon overlay to indicate that the video can be
