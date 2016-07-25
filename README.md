@@ -2,7 +2,7 @@
 
 This is an Android application for learning about new movie releases.
 
-Time spent: **2** hours spent in total
+Time spent: **5** hours spent in total
 
 ##Completed User stories:
 - [x] Required: User can view a list of movies (title image, and overview)
@@ -22,7 +22,7 @@ Time spent: **2** hours spent in total
 
 ##Walkthrough of all user stories:
 
-<img src='https://github.com/realdlee/Flickster/flickerv1.1.gif'
+<img src='https://github.com/realdlee/Flickster/blob/master/flickerv1.1.gif'
 title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
