@@ -22,6 +22,9 @@ Time spent: **2** hours spent in total
 
 ##Walkthrough of all user stories:
 
+<img src='https://github.com/realdlee/Flickster/flickerv1.1.gif'
+title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## License
